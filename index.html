@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="sneha gautam , portfolio , sneha , full stack dev , personal portfolio lifecodes , portfolio design , portfolio website ,personal portfolio"/>
     <meta name="description" content="Welcome to sneha Portfolio. Full-Stack Web Developer and Android App Developer" />
+
     <title>portfolio | Sneha Gautam</title>
+
     <!--box icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!--custom css-->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
     <!--header design-->
     <header class="header">
+
         <a href="#" class="logo">Radhe <span>Krishna</span></a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
+        <i class='bx bx-menu' id="menu-icon" ></i>
+
+        <nav class="nav">
             <a href="#home" class="active " >Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#about" >About</a>
+            <a href="#services"  >Services</a>
             <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#portfolio">Work</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+            <a href="#education" >Education</a>
+            <a href="#portfolio" >Work</a>
+           <!-- <a href="#experience" >Experience</a> -->
+            <a href="#contact" >Contact</a>
+            <a><i class='bx bx-sun' id="theme" ></i></a>
         </nav>
     </header>
 
@@ -42,6 +57,8 @@
                 <a href="https://www.linkedin.com/in/snehaagautam/"><i class='bx bxl-linkedin' ></i></a>
                 <a href="https://github.com/snehagautam869"><i class='bx bxl-github' ></i></a>
                 <a href="https://www.instagram.com/sneha_40116/"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://leetcode.com/Sneha2525/" target="_blank"><i class='bx bx-code-alt'></i></a>
+                <a href="mailto:snehagautam2525@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
             </div>
             <a href="#about" class="btn">About Me</a>
         </div>
@@ -69,26 +86,35 @@
 
     <!--services section design-->
     <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+        <h2 class="heading">My <span>Services</span></h2>
 
-        <div class="services-container">
-            <div class="services-box">
+        <div class="box-container">
+            <div class="box" id="box1">
                 <i class="bx bx-code-alt"></i>
                 <h3>Web Development</h3>
-                <p>I am a skilled developer with a strong background in various projects. I have successfully completed many assignments using different technologies and frameworks. I enjoy creating innovative solutions that meet the needs of the clients and users</p>
-                <a href="#" class="btn">Read More</a>
+                <p>I am a skilled developer with a strong background in various projects. I have successfully completed
+                    many assignments using different technologies,libraries0 and frameworks. I enjoy creating innovative
+                    solutions
+                    that meet the needs of the clients and users.</p>
+
             </div>
-            <div class="services-box">
-                <i class="bx bxs-paint"></i>
-                <h3>Graphic Designer</h3>
-                <p>As a certified web graphic designer, I have the skills and knowledge to create engaging and attractive websites. I am proficient in using various tools such as Adobe Photoshop and Illustrator to design and edit graphics, logos, icons,and other elements.I love to do these.</p>
-                <a href="#" class="btn">Read More</a>
+            <div class="box" id="box2">
+                <i class="bx bx-edit-alt"></i>
+                <h3>UI / UX Design</h3>
+                <p> I have the skills and knowledge to create engaging and
+                    attractive UI/UX Design of applications. I am proficient in using various tools such as Figma,
+                    Spline , Adobe Xd, Adobe Photoshop and Illustrator
+                    to design and edit graphics, logos, icons,Interface, Wireframe and other elements. </p>
+
             </div>
-            <div class="services-box">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3>Coding Background</h3>
-                <p>One of my strengths is problem-solving,which I have honed by tackling more than 100+ challenging questions on LeetCode. I have a solid grasp of object-oriented programming, data structures and algorithms concepts, such as linked list,array,stack etc.</p>
-                <a href="#" class="btn">Read More</a>
+            <div class="box" id="box3">
+                <i class="bx bx-objects-vertical-top"></i>
+                <h3>Coding background</h3>
+                <p>One of my strengths is problem-solving, which I have honed by tackling more than 100+ challenging
+                    questions on LeetCode. I have a solid grasp of object-oriented programming, data structures and
+                    algorithms concepts, such as linked list, array, stack etc.
+                </p>
+
             </div>
         </div>
     </section>
@@ -262,8 +288,6 @@
 
         <h1 class="heading"><i class='bx bxs-school'></i> My <span>Education</span></h1>
     
-        <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-    
         <div class="box-container">
     
         <div class="box">
@@ -308,16 +332,16 @@
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Projects</span></h2>
         <div class="portfolio-container">
-            <div class="portfolio-box">
+            <div class="portfolio-box" id="pbleft">
                 <img src="images/lifestyle store.png" alt="">
                 <div class="portfolio-layer">
                     <h4>Lifestyle Store</h4>
                     <p>A E-commerce websites like amazon and flipkart.
                     </p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a href="snehagautam869.github.io/Portfolio/"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" id="pbtop">
                 <img src="images/sb bank.png" alt="">
                 <div class="portfolio-layer">
                     <h4>S&B Bank</h4>
@@ -327,17 +351,17 @@
                             class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" id="pbright">
                 <img src="images/payment-gateway.jpeg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Badal Foundation</h4>
+                    <h4>Helping Hands</h4>
                     <p>A donation website with integerated payment gateway for easy donation.
                     </p>
                     <a href="https://sneha2543.000webhostapp.com/"><i 
                         class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" id="pbleft">
                 <img src="images/resume-builder.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Resume Builder</h4>
@@ -346,16 +370,7 @@
                             class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/c.m.p.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Object Detection</h4>
-                    <p>A implementation which detect object in real-time</p>
-                    <a href="#"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" id="pbbottom">
                 <img src="images/tour Assistant.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Tour Assistant</h4>
@@ -367,7 +382,7 @@
         </div>
     </section>
 
-<!--Experience section starts-->
+<!--Experience section starts-
 
     <section class="experience" id="experience">
 
@@ -421,7 +436,7 @@
           </a>
           </div>
         
-    </section>
+    </section>-->
 
 <!--Contact section -->
         
@@ -434,22 +449,22 @@
         <div class="image-box">
           <img src="images/contact1.png" alt="">
         </div>
-      <form id="contact-form">
+      <form id="contact-form" method="POST" name="submit-to-google-sheet">
         
         <div class="form-group">
-          <div class="field">
+          <div class="field" id="input-boxleft">
             <input type="text" name="name" placeholder="Name" required>
             <i class='bx bxs-user' ></i>
           </div>
-          <div class="field">
+          <div class="field" id="input-boxright">
             <input type="text" name="email" placeholder="Email" required>
             <i class='bx bxs-envelope' ></i>
           </div>
-          <div class="field">
+          <div class="field" id="input-boxleft">
             <input type="text" name="phone" placeholder="Phone">
             <i class='bx bxs-phone' ></i>
           </div>
-          <div class="message">
+          <div class="message" id="input-boxright">
           <textarea placeholder="Message" name="message" required></textarea>
           <i class='bx bxs-message-rounded-dots' ></i>
           </div>
@@ -479,6 +494,7 @@
 <!--scroll reveal -->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
 <!--custom js-->
