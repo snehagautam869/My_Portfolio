@@ -1,5 +1,5 @@
 # Live Demo 👇
-snehaportfolio.42web.io
+https://sneha-gautam-portfolio.netlify.app/
 
 # Portfolio Website
 
